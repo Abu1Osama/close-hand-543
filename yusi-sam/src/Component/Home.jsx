@@ -27,7 +27,7 @@ import Branded_Deals from "./Branded_Deals";
 // Settings for the slider
 const settings = {
   dots: true,
-  arrows: false,
+  arrows: true,
   fade: true,
   infinite: true,
   autoplay: true,
@@ -49,28 +49,92 @@ export default function Home() {
 
   // These are the images used in the slide
   const cards = [
-    "https://cdn.shopclues.com/images/banners/2023/Jan/19/HB1_Refurb_Web_SYM_19Jan23.jpg",
-    "https://cdn.shopclues.com/images/banners/2023/Jan/19/HB2_AutomotiveSale_Web_Esha_19Jan23.jpg",
-    "https://cdn.shopclues.com/images/banners/2023/Jan/19/HB3_Prebuzz_Web_SYM_19Jan23.jpg",
-    "https://cdn.shopclues.com/images/banners/2023/Jan/19/JMAX_HB2_Web_Riya_19Jan22.jpg",
+    "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB1_Anniversary_Web_SYM_21Jan23.jpg",
+    "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB2_Jacket_Web_SYM_21Jan23.jpg",
+    "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB3_Blockbuster_Web_SYM_21Jan23.jpg",
+    "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB4_JDD_Web_SYM_21Jan23.jpg",
     "https://cdn.shopclues.com/images/banners/2023/Jan/11/ShopcluesPCRefresh_Web_SYM_11Jan23.jpg",
   ];
-  const deals_of_the_day = [
+
+  const bestseling_product = [
     {
-      img: "https://cdn.shopclues.com/images/thumbnails/70907/200/200/128348324-70907666-1522394475.jpg",
-      name: "Vox V6666 White & Gold 12...",
-      p1: "2999",
-      p2: "1406",
-      p3: "1299",
-      dis: "53% off",
+      img: "https://cdn.shopclues.com/images1/thumbnails/97673/160/160/144264990-97673863-1552293470.jpg",
+      name: "Refurbished Nokia 1100/G...",
+      p3: "969",
     },
     {
-      img: "https://cdn.shopclues.com/images1/thumbnails/94892/200/200/142501520-94892843-1542969175.jpg",
-      name: "Pack of ^ DeVry Multicolour...",
+      img: "https://cdn.shopclues.com/images1/thumbnails/108304/160/160/150274047-108304383-1598424782.jpg",
+      name: "I Kall K18 New 2.4 inch Disp...",
+      p3: "999",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/112439/160/160/151644357-112439509-1608043117.jpg",
+      name: "Refurbished Iphone 5S 1G...",
+      p3: "6999",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/114072/160/160/151368684-114072791-1621067507.jpg",
+      name: "Refurbished Iphone 4S 16G...",
+      p3: "4199",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/108304/160/160/150274090-108304486-1594015695.jpg",
+      name: "I Kall New 2.8 inch Di...",
+      p3: "1099",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/100740/160/160/146388171-100740822-1598963228.jpg",
+      name: "Refurbished Nokia 1600 Bla...",
+      p3: "999",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/104955/160/160/148961798-104955503-1581584855.jpg",
+      name: "Refurbished Nokia 2200 Mo...",
+      p3: "1309",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/95267/160/160/142782625-95267466-1544373387.jpg",
+      name: "Refurbished Nokia C5-03(6...",
+      p3: "1599",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/112439/160/160/151644360-112439517-1608043134.jpg",
+      name: "Refurbished Iphone 5S 1G...",
+      p3: "6999",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/114072/160/160/151368684-114072791-1621067507.jpg",
+      name: "Refurbished Iphone 4S 16G...",
+      p3: "4199",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/108304/160/160/150274090-108304486-1594015695.jpg",
+      name: "I Kall New 2.8 inch Di...",
+      p3: "1099",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/100740/160/160/146388171-100740822-1598963228.jpg",
+      name: "Refurbished Nokia 1600 Bla...",
+      p3: "999",
+    },
+  ];
+
+  const deals_of_the_day = [
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1659944528.jpg",
+      name: "Venerate Headphone ...",
       p1: "269",
-      p2: "1200",
+      p2: "1999",
+      p3: "1299",
+      dis: "87% off",
+    },
+    {
+      img: "https://cdn.shopclues.com/images1/thumbnails/81476/320/320/135627858-81476269-1665754103.jpg",
+      name: "MTR MT310 Dual Sim..",
+      p1: "749",
+      p2: "999",
       p3: "237",
-      dis: "80% off",
+      dis: "25% off",
     },
     {
       img: "https://cdn.shopclues.com/images1/thumbnails/114233/200/200/152310615-114233377-1621542810.jpg",
@@ -81,20 +145,20 @@ export default function Home() {
       dis: "81% off",
     },
     {
-      img: "https://cdn.shopclues.com/images1/thumbnails/89198/200/200/139475783-89198031-1529985889.jpg",
-      name: "Fashlook Men White Dotted ...",
-      p1: "469",
-      p2: "1199",
+      img: "https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg",
+      name: "Premium Quality Nylon Braded ...",
+      p1: "250",
+      p2: "399",
       p3: "427",
-      dis: "64% off",
+      dis: "37  % off",
     },
     {
-      img: "https://cdn.shopclues.com/images1/thumbnails/111898/200/200/151364378-111898097-1604389996.jpg",
-      name: "I Kall K320 6.53Inchs Display...",
-      p1: "8600",
-      p2: "9999",
+      img: "https://cdn.shopclues.com/images1/thumbnails/46673/320/320/113119558-46673382-1653791314.jpg",
+      name: "Blue Cotton Paddad Bralatte...",
+      p1: "449",
+      p2: "999",
       p3: "5537",
-      dis: "44% off",
+      dis: "55% off",
     },
     {
       img: "https://cdn.shopclues.com/images1/thumbnails/110894/200/200/151056678-110894199-1602215912.jpg",
@@ -325,12 +389,12 @@ export default function Home() {
   ];
   const trending_fashion_zone_data = [
     {
-      img: "https://cdn.shopclues.com/images/thumbnails/78529/200/200/123783677womensvnecksleevelesschiffonpromdress1500360679.jpg",
+      img: "https://cdn.shopclues.com/images1/thumbnails/105327/320/320/149167360-105327521-1664659530.jpg",
       name: "Westchic Plain Black Georg...",
-      p1: "900",
-      p2: "1299",
+      p1: "259",
+      p2: "999",
       p3: "437",
-      dis: "66% off",
+      dis: "74% off",
     },
     {
       img: "https://cdn.shopclues.com/images1/thumbnails/95098/200/200/142654363-95098986-1543836693.jpg",
@@ -614,15 +678,88 @@ export default function Home() {
       p2: "999",
       p3: "266",
       dis: "73% off",
-    }
+    },
   ];
+  const setting1 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting2 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting3 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting4 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting5 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting6 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting7 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting8 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+  const setting9 = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+  };
+
 
 
   return (
     <>
       <Box
         position={"relative"}
-        height={"600px"}
+        height={"400px"}
         width={"full"}
         overflow={"hidden"}
       >
@@ -658,7 +795,7 @@ export default function Home() {
           colorScheme="messenger"
           borderRadius="full"
           position="absolute"
-          right={side}
+          right={"calc(20% + 10px)"}
           top={top}
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -667,11 +804,12 @@ export default function Home() {
           <BiRightArrowAlt />
         </IconButton>
         {/* Slider */}
-        <Slider {...settings} ref={(slider) => setSlider(slider)}>
+    <div className="osama" style={{width:"80%"}}>
+    <Slider {...settings} ref={(slider) => setSlider(slider)} >
           {cards.map((url, index) => (
             <Box
               key={index}
-              height={"6xl"}
+              height={"3xl"}
               position="relative"
               backgroundPosition="center"
               backgroundRepeat="no-repeat"
@@ -680,8 +818,9 @@ export default function Home() {
             />
           ))}
         </Slider>
+    </div>
       </Box>
-      <Box>
+      {/* <Box className="picbottom" style={{border:"1px solid", width:"70%"}}>
         <Grid templateColumns="repeat(5, 1fr)" gap={6}>
           <GridItem
             w="100%"
@@ -690,9 +829,9 @@ export default function Home() {
               "box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
             }
           >
-            <Text padding={"10px"} textDecoration={"underline"}>
+            <h4 className="pictext"  >
               Refurbished Smartphone
-            </Text>
+            </h4>
           </GridItem>
           <GridItem
             w="100%"
@@ -701,9 +840,9 @@ export default function Home() {
               "box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
             }
           >
-            <Text padding={"10px"} textDecoration={"underline"}>
+            <h4 className="pictext" >
               Automotive Sale
-            </Text>
+            </h4>
           </GridItem>
           <GridItem
             w="100%"
@@ -712,9 +851,9 @@ export default function Home() {
               "box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
             }
           >
-            <Text padding={"10px"} textDecoration={"underline"}>
+            <h4  className="pictext" >
               Prebuzz
-            </Text>{" "}
+            </h4>{" "}
           </GridItem>
           <GridItem
             w="100%"
@@ -723,122 +862,131 @@ export default function Home() {
               "box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
             }
           >
-            <Text padding={"10px"} textDecoration={"underline"}>
+            <h4 className="pictext" >
               JMAX Smartphones
-            </Text>
+            </h4>
           </GridItem>
           <GridItem
+          color={"teal"}
             w="100%"
             h="20"
             boxShadow={
               "box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
             }
           >
-            <Text padding={"10px"} textDecoration={"underline"}>
+            <h4  className="pictext">
               Intel
-            </Text>
+            </h4>
           </GridItem>
         </Grid>
-        <Flex></Flex>
-      </Box>
+      </Box> */}
+      <div className="picbottom" >
+        <h1  className="under">ShopCluses  Aniversary Sale</h1>
+        <h2 className="under"> Men's Blue Jacket</h2>
+        <h2 className="under">Blockbuster Jacket</h2>
+        <h2 className="under">Jdd</h2>
+        <h2 className="under">Intel</h2>
+        
+      </div>
 
-      {deals_of_the_day.map((item) => (
-        <Deal
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
-      {Your_gadget_store.map((item) => (
-        <Gadget
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
-      {daily_essential.map((item) => (
-        <Daily_essential
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
-      {prime_mall.map((item) => (
-        <Prime_mall
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
-      {festive_special.map((item) => (
-        <Festive_Specials
-          name={item.name}
-          img={item.img}
-          p2={item.p2}
-          p3={item.p3}
-        />
-      ))}
-      {trending_fashion_zone_data.map((item) => (
-        <Trending_Fashion_Zone
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
-      {budget_bazaar.map((item) => (
-        <Budget_Bazaar
-          img={item.img}
-        />
-      ))}
-       {sports_and_health.map((item) => (
-        <Sports_Health
-        name={item.name}
-        img={item.img}
-        dis={item.dis}
-        />
-      ))}
-      {brand_store.map((item) => (
-        <Brand_Store
-        name={item.name}
-        img={item.img}
-        dis={item.dis}
-        />
-      ))}
-      { branded_deal.map((item) => (
-        <Branded_Deals
-          name={item.name}
-          img={item.img}
-          p1={item.p1}
-          p2={item.p2}
-          p3={item.p3}
-          dis={item.dis}
-        />
-      ))}
+      <Slider {...setting1}>
+        {deals_of_the_day.map((item) => (
+          <Deal
+            name={item.name}
+            img={item.img}
+            p1={item.p1}
+            p2={item.p2}
+            p3={item.p3}
+            dis={item.dis}
+          />
+        ))}
+      </Slider>
 
+      <Slider {...setting2}>
+        {Your_gadget_store.map((item) => (
+          <Gadget
+            name={item.name}
+            img={item.img}
+            p1={item.p1}
+            p2={item.p2}
+            p3={item.p3}
+            dis={item.dis}
+          />
+        ))}
+      </Slider>
 
-    
+      <Slider {...setting3}>
+        {daily_essential.map((item) => (
+          <Daily_essential name={item.name} img={item.img} p3={item.p3} />
+        ))}
+      </Slider>
+
+      <Slider {...setting4}>
+        {prime_mall.map((item) => (
+          <Prime_mall
+            name={item.name}
+            img={item.img}
+            p1={item.p3}
+            p2={item.p2}
+            dis={item.dis}
+          />
+        ))}
+      </Slider>
+
+      <Slider {...setting5}>
+        {festive_special.map((item) => (
+          <Festive_Specials
+            name={item.name}
+            img={item.img}
+            p2={item.p2}
+            p3={item.p3}
+          />
+        ))}
+      </Slider>
+
+      <Slider {...setting6}>
+        {trending_fashion_zone_data.map((item) => (
+          <Trending_Fashion_Zone
+            name={item.name}
+            img={item.img}
+            p1={item.p1}
+            p2={item.p2}
+            p3={item.p3}
+            dis={item.dis}
+          />
+        ))}
+      </Slider>
+
+      <Slider {...setting7}>
+        {budget_bazaar.map((item) => (
+          <Budget_Bazaar img={item.img} />
+        ))}
+      </Slider>
+
+      <Slider {...setting8}>
+        {sports_and_health.map((item) => (
+          <Sports_Health name={item.name} img={item.img} dis={item.dis} />
+        ))}
+      </Slider>
+
+      <Slider {...setting9}>
+        {brand_store.map((item) => (
+          <Brand_Store name={item.name} img={item.img} dis={item.dis} />
+        ))}
+      </Slider>
+  
+<Slider {...setting9}>
+        {branded_deal.map((item) => (
+          <Branded_Deals
+            name={item.name}
+            img={item.img}
+            p1={item.p1}
+            p2={item.p2}
+            p3={item.p3}
+            dis={item.dis}
+          />
+        ))}
+      </Slider>
     </>
-    
   );
-  
-  
-  
 }
-
-
-

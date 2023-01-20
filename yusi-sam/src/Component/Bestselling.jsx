@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Bestselling() {
+function Bestselling({img}) {
   return (
-    <div>Bestselling</div>
+    <div className='sama'>
+    <img src={img} alt="" />
+    </div>
+    
+    
   )
 }
 

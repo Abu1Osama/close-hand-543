@@ -1,8 +1,18 @@
 import React from 'react'
 
-function Festive_Specials() {
+import "./Deal.css"
+
+function Festive_Specials({name,img,p1,p2,p3,dis}) {
   return (
-    <div>Festive_Specials</div>
+    <div className='deal'>
+<img src={img} alt="" />
+<h3>{name}</h3>
+<div className='price'>
+<p className='p3'>{p3}</p>
+</div>
+
+
+    </div>
   )
 }
 

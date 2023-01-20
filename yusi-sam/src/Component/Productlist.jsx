@@ -176,7 +176,40 @@ function Productlist() {
       </div>
       <div id="list_div">
 
-       Show Your Product here
+      <div class="mobile-div">
+              <span id="wishlist">
+                <a 
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/128/6320/6320703.png"
+                    alt=""
+                /></a>
+              </span>
+              <div class="img-div">
+                <img
+                  src=""
+                  alt="pimage"
+                />
+              </div>
+              <div>
+                <p id="shipping">cloth</p>
+                <div class="new-price">
+                  <span class="p-price">₹100</span>
+                  <span class="prd-discount">80%Off</span>
+                </div>
+                <div class="old-price">
+                  <span>₹1000</span>
+                  <span>₹400</span>
+                </div>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <p id="shipping"><i class="fal fa-truck"></i>Free Shipping</p>
+              </div>
+            </div>
       </div>
     </div>
   </div>
