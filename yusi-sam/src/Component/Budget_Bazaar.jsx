@@ -1,8 +1,13 @@
 import React from 'react'
+import "./Deal.css"
 
-function Budget_Bazaar() {
+function Budget_Bazaar({name,img,p1,p2,p3,dis}) {
   return (
-    <div>Budget_Bazaar</div>
+    <div className='deal'>
+<img src={img} alt="" />
+
+
+    </div>
   )
 }
 

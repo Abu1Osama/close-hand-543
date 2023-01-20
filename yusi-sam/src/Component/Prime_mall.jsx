@@ -1,9 +1,20 @@
 import React from 'react'
+import "./Deal.css"
 
-function Prime_mall() {
+function Prime_mall({name,img,p1,p2,p3,dis}) {
   return (
-    <div>Prime_mall</div>
+    <div className='deal'>
+<img src={img} alt="" />
+<h3>{name}</h3>
+<div className='price'>
+<p className='p1'>₹{p1}</p>
+<del  style={{color:"grey"}} className='p2'>₹{p2}</del>
+<p className='p3'>{dis}</p>
+</div>
+
+
+    </div>
   )
 }
 
-export default Prime_mall
+export default  Prime_mall

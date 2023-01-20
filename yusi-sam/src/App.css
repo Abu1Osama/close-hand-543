@@ -1,6 +1,38 @@
 .App {
   text-align: center;
 }
+.osama img{
+  width: 60%;
+  object-fit: inherit;
+}
+.picbottom{
+  display: flex;
+  width: 8  0%;
+  border: 1px solid rgb(235, 228, 228);
+  height: 60px;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: grey;
+  align-items: center;
+}
+.under:hover{
+  text-decoration: underline;
+  color: #24a3b5;
+}
+.css-1ooh3n5{
+  padding:"0px";
+  color: grey;
+  margin-top: 20px;
+
+
+}
+.css-1ooh3n5:hover{
+  color: teal;
+  text-decoration: underline;
+
+
+}
+
 
 .App-logo {
   height: 40vmin;

@@ -1,26 +1,20 @@
-import React from "react";
-import {
-  Box,
-  Center,
-  useColorModeValue,
-  Heading,
-  Text,
-  Stack,
-  Image,
-  Flex,
-  Grid,
-} from "@chakra-ui/react";
+import React from 'react'
+import "./Deal.css"
 
-function Deal({ name, img, p1, p2, p3, dis }) {
-  return(
-
-<Box display={"flex"}>
-<Box><h1>{name}</h1>
-<h1>{p1}</h1></Box>
-</Box>
+function Deal({name,img,p1,p2,p3,dis}) {
+  return (
+    <div className='deal'>
+<img src={img} alt="" />
+<h3>{name}</h3>
+<div className='price'>
+<p className='p1'>₹{p1}</p>
+<del style={{color:"grey"}}className='p2'>₹{p2}</del>
+<p className='p3'>{dis}</p>
+</div>
 
 
+    </div>
   )
 }
 
-export default Deal;
+export default Deal
