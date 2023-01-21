@@ -56,6 +56,8 @@ export default function Home() {
     "https://cdn.shopclues.com/images/banners/2023/Jan/11/ShopcluesPCRefresh_Web_SYM_11Jan23.jpg",
   ];
 
+
+
   const bestseling_product = [
     {
       img: "https://cdn.shopclues.com/images1/thumbnails/97673/160/160/144264990-97673863-1552293470.jpg",
@@ -781,7 +783,7 @@ export default function Home() {
           colorScheme="messenger"
           borderRadius="full"
           position="absolute"
-          left={side}
+          left={"30px"}
           top={top}
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -795,7 +797,7 @@ export default function Home() {
           colorScheme="messenger"
           borderRadius="full"
           position="absolute"
-          right={"calc(20% + 10px)"}
+          right={"calc(15% + 30px)"}
           top={top}
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -804,21 +806,30 @@ export default function Home() {
           <BiRightArrowAlt />
         </IconButton>
         {/* Slider */}
-    <div className="osama" style={{width:"80%"}}>
+        <div className="bestseller">
+        <div className="osama" >
     <Slider {...settings} ref={(slider) => setSlider(slider)} >
           {cards.map((url, index) => (
             <Box
               key={index}
-              height={"3xl"}
+              height={"350px"}
               position="relative"
               backgroundPosition="center"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
+              borderRadius={"8px"}
               backgroundImage={`url(${url})`}
             />
           ))}
         </Slider>
     </div>
+    <div className="sellerright">
+     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
+     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
+     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
+    </div>
+        </div>
+   
       </Box>
       {/* <Box className="picbottom" style={{border:"1px solid", width:"70%"}}>
         <Grid templateColumns="repeat(5, 1fr)" gap={6}>
