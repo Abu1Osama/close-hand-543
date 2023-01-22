@@ -59,6 +59,11 @@
   object-fit: contain;
   height: 30%;
 }
+.tagname{
+  margin: 30px 0 -20px 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 
 

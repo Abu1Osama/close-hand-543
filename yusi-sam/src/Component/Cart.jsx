@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Input, Image, Text, Button, Box } from "@chakra-ui/react";
 import { useState } from "react";
+import {Link} from "react-router-dom"
 
 function Cart() {
   const [count, setCount] = useState(1);
@@ -11,7 +12,7 @@ function Cart() {
   function inc() {
     setCount(count + 1);
   }
-  let price = 100;
+  let price = 300;
 
   return (
     <>
@@ -25,11 +26,11 @@ function Cart() {
       <Box border={"1px"} marginBottom={"30px"}>
         <Flex justifyContent={"space-evenly"} alignItems={"center"}>
           <Box border={"1px"}>
-            <Image src="https://images.shopclues.com/images1/thumbnails/104902/320/320/149009359-104902508-1581168144.jpg"></Image>
+            <Image src="https://cdn.shopclues.com/images1/thumbnails/95906/320/320/143100947-95906864-1664652571.jpg"></Image>
           </Box>
           <Box>
-            <h1>cloth cloth cloth</h1>
-            <h2>Color: white</h2>
+            <h1>Bhuwal Fashion Designer Black Lace Lycra Saree With Blouse</h1>
+            <h2>Color: Black</h2>
           </Box>
           <Box border={"1px"} width={"150px"} textAlign={"center"}>
             <Flex alignItems={"center"} justifyContent={"space-evenly"}>
@@ -53,37 +54,7 @@ function Cart() {
           </Box>
         </Flex>
       </Box>
-      <Box border={"1px"} marginBottom={"30px"}>
-        <Flex justifyContent={"space-evenly"} alignItems={"center"}>
-          <Box border={"1px"}>
-            <Image src="https://cdn.shopclues.com/images1/thumbnails/111797/320/320/151327681-111797485-1603901018.jpg"></Image>
-          </Box>
-          <Box>
-            <h1>cloth cloth cloth</h1>
-            <h2>Color: white</h2>
-          </Box>
-          <Box border={"1px"} width={"150px"} textAlign={"center"}>
-            <Flex alignItems={"center"} justifyContent={"space-evenly"}>
-              <Button disabled={count} onClick={dec}>
-                -
-              </Button>
-              <Text>{count}</Text>
-              <Button onClick={inc}>+</Button>
-            </Flex>
-            <Text>Remove</Text>
-          </Box>
-          <Box border={"1px"}>
-            Price:{price}
-            <Text>Sipping: FREE</Text>
-          </Box>
-          <Box border={"1px"}>
-            <p>
-              ₹ {count * price} <br />{" "}
-              <p>Inclusive of all the applicable taxes</p>
-            </p>
-          </Box>
-        </Flex>
-      </Box>
+     
       <Box textAlign={"center"}>
         <Flex justifyContent={"space-between"} padding={"5px 20px"}>
           <Box>
@@ -106,7 +77,7 @@ function Cart() {
               <h1>Grand Total:</h1>
               <h1>₹ {price * count}</h1>
             </Flex>
-            <Button background={"teal"}>Place Order</Button>
+            <Link to={"/"}><Button background={"teal"}>Place Order</Button></Link>
           </Box>
         </Flex>
       </Box>

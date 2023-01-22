@@ -1,7 +1,25 @@
 import React from 'react'
 import "./productlist.css"
+import {Link} from "react-router-dom"
+import axios  from "axios";
+import { useEffect,useState } from 'react';
 
 function Productlist() {
+  const[spike,setDataI]=useState([])
+
+  const fetchData=()=>{
+
+    return axios.get(`http://localhost:3000/sarees`)
+  }
+   useEffect(() => {
+    fetchData(spike).then((res)=>setDataI(res.data))
+   
+     
+   }, [])
+   
+  
+    
+
   return (
     <>
     <div id="promodiv">
@@ -21,44 +39,44 @@ function Productlist() {
   </div>
   <div id="cont">
     <div id="side-div">
-      <div class="cat-div">
-        <div class="cat-inside">
-          <div class="flex">Category Filters</div>
+      <div className="cat-div">
+        <div className="cat-inside">
+          <div className="flex">Category Filters</div>
           <ul>
-            <a href=""><span>Mobile & Tablets</span></a>
+            <a href=""><span>Womens</span></a>
           </ul>
         </div>
       </div>
-      <div class="discount-div">
-        <div class="flex">
+      <div className="discount-div">
+        <div className="flex">
           Discount
-          <span class="clear-all1">Clear All</span>
+          <span className="clear-all1">Clear All</span>
         </div>
         <ul>
-          <input class="twenty" type="checkbox" />
+          <input className="twenty" type="checkbox" />
           <label for="">Upto 20% </label>
         </ul>
         <ul>
-          <input class="forty" type="checkbox" name="" id="" />
+          <input className="forty" type="checkbox" name="" id="" />
           <label for="">21-40% </label>
         </ul>
         <ul>
-          <input class="sixty" type="checkbox" />
+          <input className="sixty" type="checkbox" />
           <label for="">41-60% </label>
         </ul>
         <ul>
-          <input class="eighty" type="checkbox" />
+          <input className="eighty" type="checkbox" />
           <label for="">61-80%</label>
         </ul>
         <ul>
-          <input class="aboveAll" type="checkbox" />
+          <input className="aboveAll" type="checkbox" />
           <label for="">More than 80% </label>
         </ul>
       </div>
-      <div class="price-div">
-        <div class="flex">
+      <div className="price-div">
+        <div className="flex">
           Price
-          <span class="clear-all">Clear All</span>
+          <span className="clear-all">Clear All</span>
         </div>
         <ul>
           <input id="price-one" type="checkbox" />
@@ -69,100 +87,99 @@ function Productlist() {
           <label for="">Above 5000</label>
         </ul>
       </div>
-      <div class="prod-rating">
-        <div class="flex">
+      <div className="prod-rating">
+        <div className="flex">
           Product Rating
           <span>Clear All</span>
         </div>
         <ul>
-          <input class="rat-one" type="checkbox" />
+          <input className="rat-one" type="checkbox" />
           <label for="">4 & Above(15)</label>
         </ul>
         <ul>
-          <input class="rat-two" type="checkbox" name="" id="" />
+          <input className="rat-two" type="checkbox" name="" id="" />
           <label for="">3 & Above(47)</label>
         </ul>
         <ul>
-          <input class="rat-three" type="checkbox" name="" id="" />
+          <input className="rat-three" type="checkbox" name="" id="" />
           <label for="">2 & Above(35)</label>
         </ul>
         <ul>
-          <input class="rat-four" type="checkbox" name="" id="" />
+          <input className="rat-four" type="checkbox" name="" id="" />
           <label for="">1 & Above(10)</label>
         </ul>
       </div>
-      <div class="avail-div">
-        <div class="flex">
+      <div className="avail-div">
+        <div className="flex">
           Availability
           <span>Clear All</span>
         </div>
         <ul>
-          <input class="avail-out" type="checkbox" name="" id="" />
+          <input className="avail-out" type="checkbox" name="" id="" />
           <label for="">Include out of stock</label>
         </ul>
       </div>
-      <div class="cod">
-        <div class="flex">
+      <div className="cod">
+        <div className="flex">
           CoD
           <span>Clear All</span>
         </div>
         <ul>
-          <input class="cod-out" type="checkbox" name="" id="" />
+          <input className="cod-out" type="checkbox" name="" id="" />
           <label for="">Only Cod products(29)</label>
         </ul>
       </div>
-      <div class="brand">
-        <div class="flex">
+      <div className="brand">
+        <div className="flex">
           Brand
           <span>Clear All</span>
         </div>
         <ul>
-          <input class="Apple" type="checkbox" name="" id="" />
+          <input className="Apple" type="checkbox" name="" id="" />
           <label for="">Apple(29)</label>
         </ul>
         <ul>
-          <input class="Blackberry" type="checkbox" name="" id="" />
+          <input className="Blackberry" type="checkbox" name="" id="" />
           <label for="">Blackberry(29)</label>
         </ul>
         <ul>
-          <input class="iphone" type="checkbox" name="" id="" />
+          <input className="iphone" type="checkbox" name="" id="" />
           <label for="">iphone(29)</label>
         </ul>
         <ul>
-          <input class="itel" type="checkbox" name="" id="" />
+          <input className="itel" type="checkbox" name="" id="" />
           <label for="">itel(29)</label>
         </ul>
         <ul>
-          <input class="Micromax" type="checkbox" name="" id="" />
+          <input className="Micromax" type="checkbox" name="" id="" />
           <label for="">Micromax(29)</label>
         </ul>
         <ul>
-          <input class="Oneplus" type="checkbox" name="" id="" />
+          <input className="Oneplus" type="checkbox" name="" id="" />
           <label for="">Oneplus(29)</label>
         </ul>
         <span>View All</span>
       </div>
-      <div class="item-cond">
-        <div class="flex">
+      <div className="item-cond">
+        <div className="flex">
           Items condition
           <span>Clear All</span>
         </div>
         <ul>
-          <input class="New" type="checkbox" name="" id="" />
+          <input className="New" type="checkbox" name="" id="" />
           <label for="">New(29)</label>
         </ul>
         <ul>
-          <input class="Refurbished" type="checkbox" name="" id="" />
+          <input className="Refurbished" type="checkbox" name="" id="" />
           <label for="">Refurbished(29)</label>
         </ul>
       </div>
     </div>
     <div id="main-div">
-      <div class="sj">
+      <div className="sj">
         <div>
-          <h2>Smartphone Junction</h2>
         </div>
-        <div class="product-found">
+        <div className="product-found">
           <p>30 Products found</p>
           <ul id="sortby">
             <span>Sort By:</span>
@@ -174,43 +191,50 @@ function Productlist() {
           </ul>
         </div>
       </div>
-      <div id="list_div">
 
-      <div class="mobile-div">
-              <span id="wishlist">
-                <a 
-                  ><img
-                    src="https://cdn-icons-png.flaticon.com/128/6320/6320703.png"
-                    alt=""
-                /></a>
-              </span>
-              <div class="img-div">
-                <img
-                  src=""
-                  alt="pimage"
-                />
-              </div>
-              <div>
-                <p id="shipping">cloth</p>
-                <div class="new-price">
-                  <span class="p-price">₹100</span>
-                  <span class="prd-discount">80%Off</span>
-                </div>
-                <div class="old-price">
-                  <span>₹1000</span>
-                  <span>₹400</span>
-                </div>
+   <div className='dis'>
+   {
+      spike.map((item)=>(
+        <div id="list_div">
+        <div className="mobile-div">
+             
+               <Link to={"/productdetail"}> <div className="img-div">
+               <span id="wishlist">
+                  <a 
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/128/6320/6320703.png"
+                      alt=""
+                  /></a>
+                </span>
+                  <img
+                    src={item.image}
+                    alt="pimage"
+                  />
+                </div></Link>
                 <div>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
+                  <p id="shipping">{item.name}</p>
+                  <div className="new-price">
+                    <span className="p-price">₹{" "}{item.price}</span>
+                    <span className="prd-discount">80%Off</span>
+                  </div>
+                  <div className="old-price">
+                    <span>₹{" "}1000</span>
+                  </div>
+                  <div>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star"></span>
+                    <span className="fa fa-star"></span>
+                  </div>
+                  <p id="shipping"><i className="fal fa-truck"></i>Free Shipping</p>
                 </div>
-                <p id="shipping"><i class="fal fa-truck"></i>Free Shipping</p>
               </div>
-            </div>
-      </div>
+        </div>
+      ))
+    }
+   </div>
+
     </div>
   </div>
   </>
