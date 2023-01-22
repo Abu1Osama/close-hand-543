@@ -9,6 +9,11 @@
     padding: 1%;
     background-color: #eff7fa;
   }
+  .dis{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 10px;
+  }
   
   #side-div {
     box-sizing: border-box;
@@ -97,6 +102,7 @@
   .mobile-div {
     height: 500px;
     cursor: pointer;
+    height: 500px;
   }
   #mobile-div div {
     box-sizing: border-box;

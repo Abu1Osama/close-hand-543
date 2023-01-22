@@ -52,8 +52,9 @@ export default function Home() {
     "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB1_Anniversary_Web_SYM_21Jan23.jpg",
     "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB2_Jacket_Web_SYM_21Jan23.jpg",
     "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB3_Blockbuster_Web_SYM_21Jan23.jpg",
-    "https://cdn.shopclues.com/images/banners/2023/Jan/21/HB4_JDD_Web_SYM_21Jan23.jpg",
+    "https://cdn.shopclues.com/images/banners/2023/Jan/22/HB3_Blockbuster_Web_SYM_22Jan23_New.jpg",
     "https://cdn.shopclues.com/images/banners/2023/Jan/11/ShopcluesPCRefresh_Web_SYM_11Jan23.jpg",
+   " https://cdn.shopclues.com/images/banners/2023/Jan/22/HB4_Jdd_Web_Riya_22Jan23.jpg"
   ];
 
 
@@ -689,6 +690,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting2 = {
     dots: true,
@@ -697,6 +724,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting3 = {
     dots: true,
@@ -705,6 +758,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+      responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting4 = {
     dots: true,
@@ -713,6 +792,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting5 = {
     dots: true,
@@ -721,6 +826,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting6 = {
     dots: true,
@@ -729,6 +860,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting7 = {
     dots: true,
@@ -736,7 +893,32 @@ export default function Home() {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 4,
+    slidesToScroll: 4,  responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting8 = {
     dots: true,
@@ -745,6 +927,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const setting9 = {
     dots: true,
@@ -753,6 +961,32 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
+    responsive:[
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
 
@@ -808,6 +1042,7 @@ export default function Home() {
         {/* Slider */}
         <div className="bestseller">
         <div className="osama" >
+         
     <Slider {...settings} ref={(slider) => setSlider(slider)} >
           {cards.map((url, index) => (
             <Box
@@ -825,8 +1060,8 @@ export default function Home() {
     </div>
     <div className="sellerright">
      <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
-     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
-     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum1_SYM_06Dec22.jpg" alt="" />
+     <img src="https://cdn.shopclues.com/images/banners/2022/dec/06/Platinum2_SYM_06Dec22.jpg" alt="" />
+     <img src="https://cdn.shopclues.com/images/banners/2022/dec/02/Platinum3_Esha_2ndDec22.jpg" alt="" />
     </div>
         </div>
    
@@ -899,8 +1134,10 @@ export default function Home() {
         <h2 className="under">Intel</h2>
         
       </div>
-
+     <h1 className="tagname">Deals of the Day</h1>
+     
       <Slider {...setting1}>
+     
         {deals_of_the_day.map((item) => (
           <Deal
             name={item.name}
@@ -912,7 +1149,7 @@ export default function Home() {
           />
         ))}
       </Slider>
-
+      <h1 className="tagname">Your Gadgets Store</h1>
       <Slider {...setting2}>
         {Your_gadget_store.map((item) => (
           <Gadget
@@ -925,13 +1162,13 @@ export default function Home() {
           />
         ))}
       </Slider>
-
+      <h1 className="tagname">Daily Essentials</h1>
       <Slider {...setting3}>
         {daily_essential.map((item) => (
           <Daily_essential name={item.name} img={item.img} p3={item.p3} />
         ))}
       </Slider>
-
+      <h1 className="tagname">Prime Mall</h1>
       <Slider {...setting4}>
         {prime_mall.map((item) => (
           <Prime_mall
@@ -943,7 +1180,7 @@ export default function Home() {
           />
         ))}
       </Slider>
-
+      <h1 className="tagname">Festive Specials</h1>
       <Slider {...setting5}>
         {festive_special.map((item) => (
           <Festive_Specials
@@ -954,7 +1191,7 @@ export default function Home() {
           />
         ))}
       </Slider>
-
+      <h1 className="tagname">Trending Fashion Zone</h1>
       <Slider {...setting6}>
         {trending_fashion_zone_data.map((item) => (
           <Trending_Fashion_Zone
@@ -967,25 +1204,25 @@ export default function Home() {
           />
         ))}
       </Slider>
-
+      <h1 className="tagname">Budget Bazaar</h1>
       <Slider {...setting7}>
         {budget_bazaar.map((item) => (
           <Budget_Bazaar img={item.img} />
         ))}
       </Slider>
-
+      <h1 className="tagname">Sports & Health</h1>
       <Slider {...setting8}>
         {sports_and_health.map((item) => (
           <Sports_Health name={item.name} img={item.img} dis={item.dis} />
         ))}
       </Slider>
-
+      <h1 className="tagname">Brand Store</h1>
       <Slider {...setting9}>
         {brand_store.map((item) => (
           <Brand_Store name={item.name} img={item.img} dis={item.dis} />
         ))}
       </Slider>
-  
+      <h1 className="tagname">Branded Deals</h1>
 <Slider {...setting9}>
         {branded_deal.map((item) => (
           <Branded_Deals
