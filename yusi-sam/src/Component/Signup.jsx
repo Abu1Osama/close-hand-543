@@ -79,10 +79,10 @@ import {
                <Button
                   loadingText="Submitting"
                   size="lg"
-                  bg={'blue.400'}
+                  bg={'#24a3b5'}
                   color={'white'}
                   _hover={{
-                    bg: 'blue.500',
+                    bg: '#178e90',
                   }}>
                   Sign up
                 </Button></Link>

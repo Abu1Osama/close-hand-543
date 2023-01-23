@@ -1,24 +1,41 @@
 import React from 'react'
 import "./productlist.css"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import axios  from "axios";
 import { useEffect,useState } from 'react';
+import data from './db.json';
 
-function Productlist() {
-  const[spike,setDataI]=useState([])
+function Productlist(props) {
+  // const[spike,setDataI]=useState("sarees")
 
-  const fetchData=()=>{
-
-    return axios.get(`http://localhost:3000/sarees`)
-  }
-   useEffect(() => {
-    fetchData(spike).then((res)=>setDataI(res.data))
-   
+  // async function loadJSON(url) {
+  //   const res = await fetch(url);
+  //   return await res.json();
+  // }
+ 
+  //  useEffect(() => {
+  //   // fetchData(spike).then((res)=>setDataI(res.data))
+  //   loadJSON(`db.json/sarees`).then((data) => {
+  //     setDataI(data)
+  //     console.log(spike);
+  //   });
      
-   }, [])
-   
+  //  }, [])
+  // const [data, setData] = useState([])
+  // const fetchJson = () => {
+  //   fetch('./db.json')
+  //   .then(response => {
+  //     return response.json();
+  //   }).then(data => {
+  //     setData(data);
+  //   })
+  // }
+  useEffect(() => {
+   console.log(data)
+  },[])
+ 
   
-    
+  const Navigate=useNavigate();
 
   return (
     <>
@@ -191,14 +208,15 @@ function Productlist() {
           </ul>
         </div>
       </div>
-
    <div className='dis'>
    {
-      spike.map((item)=>(
+      data[props.spike].map((item)=>(
         <div id="list_div">
         <div className="mobile-div">
              
-               <Link to={"/productdetail"}> <div className="img-div">
+               <button onClick={()=>{props.setSize(item)
+         Navigate("/productdetail")
+    } }> <div className="img-div">
                <span id="wishlist">
                   <a 
                     ><img
@@ -210,7 +228,7 @@ function Productlist() {
                     src={item.image}
                     alt="pimage"
                   />
-                </div></Link>
+                </div></button>
                 <div>
                   <p id="shipping">{item.name}</p>
                   <div className="new-price">
@@ -230,6 +248,7 @@ function Productlist() {
                   <p id="shipping"><i className="fal fa-truck"></i>Free Shipping</p>
                 </div>
               </div>
+
         </div>
       ))
     }

@@ -158,7 +158,7 @@ export default function Footer() {
               Our Leading Categories
             </Text>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}> MObile and Tablets:</Text>
             <Link>Android Phones</Link>|<Link>Smartphones</Link>|
             <Link>Feature Phones</Link>|<Link>Unboxed Phones</Link>|
@@ -166,14 +166,14 @@ export default function Footer() {
             <Link>CDMA Phones</Link>|<Link>Value Added Services</Link>|
             <Link>Sell Old/ Used Mobiles</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}> Computers:</Text>
             <Link>Laptops</Link>|<Link>Printers</Link>|<Link>Routers</Link>|
             <Link>Ink & Toner Cartridges</Link>|<Link>Monitors</Link>|
             <Link>Video Games</Link>|<Link>Unboxed & Refurbished Laptops</Link>|
             <Link>Assembled Desktops| Data Cards</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}> TV, Audio & Large Appliances:</Text>
             <Link>TVs & DTH</Link> |<Link>Home Theatre Systems</Link>|
             <Link>Hidden Cameras & CCTVs</Link>|<Link>Refrigerators</Link>|
@@ -181,7 +181,7 @@ export default function Footer() {
             <Link>Cameras</Link>|<Link>Speakers</Link>
           </Flex>
 
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}  flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}> Mobile & Laptop Accessories:</Text>
             <Link>Headphones</Link>|<Link>Power Banks</Link>|
             <Link>Backpacks</Link>|<Link>Mobile Cases & Covers</Link>|
@@ -189,7 +189,7 @@ export default function Footer() {
             <Link>Mouse</Link>|
             <Link>Smart Watches & Fitness Bands| MicroSD Cards</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}> Appliances:-</Text>
             <Link>Trimmers</Link>|<Link>Hair Dryers</Link>|
             <Link>Emergency Lights</Link>|<Link>Water Purifiers</Link>|
@@ -197,7 +197,7 @@ export default function Footer() {
             <Link>Induction Cooktops| Sewing Machines| Geysers</Link>
           </Flex>
 
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}  flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}>Home & Kitchen:</Text>
             <Link>Bedsheets</Link>|<Link>Hardware & Sanitaryware</Link>|
             <Link>Towels, Bath Linens</Link>|<Link>Furniture</Link>| Cookware |
@@ -222,7 +222,7 @@ export default function Footer() {
             <Link>Ballerinas</Link>|<Link>Loafers</Link>|<Link>Boots</Link>|
             <Link>Shoe Care & Accessories</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}>Travel & Luggage:</Text>
             <Link>Duffle Bags</Link>|<Link>Laptop Bags</Link>|
             <Link>Travel Pouches</Link>|<Link>Backpacks</Link>|
@@ -230,7 +230,7 @@ export default function Footer() {
             <Link>Gym Bags</Link>|<Link>Messenger Bags</Link>|
             <Link>School Bags</Link>|<Link>Safety Locks</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}>Jewelry & Watches:</Text>
             <Link>Coins & Bars</Link>|<Link>Men's Watches</Link>|
             <Link>Women's Watches</Link>|<Link>Necklaces Sets</Link>|
@@ -238,7 +238,7 @@ export default function Footer() {
             <Link>Earrings</Link>|<Link>Rings</Link>|<Link>Jewelry Boxes</Link>|
             <Link>Kid's Watches</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}>Automotive:</Text>
             <Link>Bike Accessories / Tools</Link>|<Link>Car Cleaning Aids</Link>
             |<Link>Helmets</Link>|<Link>Bike Body Covers</Link>|
@@ -246,7 +246,7 @@ export default function Footer() {
             <Link>Car Perfumes</Link>|<Link>Car Scratch Removers</Link>|
             <Link>Car Audio</Link>|<Link>Video</Link>|<Link>Bike Alarms</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}>Toys, Baby & Kids :</Text>
             <Link>Diapers</Link>|<Link>Educational Toys</Link>|
             <Link>Kid's Footwear</Link>|<Link>Remote Controlled Toys</Link>|
@@ -254,7 +254,7 @@ export default function Footer() {
             <Link>Cubes</Link>|<Link>Maternity Care</Link>|
             <Link>Kid's Apparel</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}>Gourmet & Daily Needs :</Text>
             <Link>Office Supplies</Link>|<Link>Pet Supplies</Link>|
             <Link>Books</Link>|<Link>Namkeen</Link>|<Link>Stationery</Link>|
@@ -262,14 +262,14 @@ export default function Footer() {
             <Link>Chocolates & Candies</Link>|<Link>Indian Sweets</Link>|
             <Link>Gifts</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"}flexWrap={"wrap"}  padding={"0px 20px"}>
             <Text fontWeight={"600"}>Sports and Health:</Text>
             <Link>Home Gym Equipment</Link>|<Link>Exercise Bikes</Link>|
             <Link>Gym Accessories</Link>|<Link>Massagers</Link>|
             <Link>Diabetic Care</Link>|<Link>Cricket</Link>|
             <Link>Table Tennis</Link>
           </Flex>
-          <Flex gap={"5px"} padding={"0px 20px"}>
+          <Flex gap={"5px"} flexWrap={"wrap"} padding={"0px 20px"}>
             <Text fontWeight={"600"}>Beauty & Perfumes:</Text>
             <Link>Grooming Essentials</Link>|<Link>Deodorants</Link>|
             <Link>Men's Perfumes</Link>|<Link>Hair Care</Link>|

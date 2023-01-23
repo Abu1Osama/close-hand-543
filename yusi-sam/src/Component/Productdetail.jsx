@@ -23,19 +23,12 @@ import {
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { MdLocalShipping } from 'react-icons/md';
-  import {Link} from "react-router-dom"
+  import {Link, useNavigate} from "react-router-dom"
   
-  export default function Productdetail () {
+  export default function Productdetail (props) {
+    const Navigate=useNavigate();
 
-const arr={
-    
-        "name":"Bhuwal Fashion Designer Black Lace Lycra Saree With Blouse",
-        "price": 499,
-        "product_id":  143100947,
-        "description":"Add to your classy wardrobe collection with this elegantly, Beautifully designed  saree. A wondrous mix of fashion and tradition. This saree lends you an authentic traditional and uplift your ethnic style in an instant. Tailored from high quality - give soft & comfy feel , it features an attractive design. Wear this designer  saree with a pair of high heels and large earrings to steal the show and Be an angel and create and establish a smashing impact on anyone . Comes with matching blouse. (Slight variation in color is possible because of display. Model images are only representative.)",
-        "image":"https://cdn.shopclues.com/images1/thumbnails/95906/320/320/143100947-95906864-1664652571.jpg"
-    
-}
+const arr=props.size
 
     return (
       <Container maxW={'7xl'}>
@@ -46,6 +39,7 @@ const arr={
           <Flex>
             <Image
               rounded={'md'}
+              objectFit={"contain"}
               alt={'product image'}
               src={
                 arr.image
@@ -59,9 +53,10 @@ const arr={
           <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={'header'}>
               <Heading
-                lineHeight={1.1}
+                lineHeight={1.0}
                 fontWeight={600}
-                fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
+                fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}
+                marginBottom={"20px"}>
                 {arr.name}
               </Heading>
               <Text fontSize={'lg'}>
@@ -88,7 +83,8 @@ const arr={
                 <Text
                   color={useColorModeValue('gray.500', 'gray.400')}
                   fontSize={'2xl'}
-                  fontWeight={'300'}>
+                  fontWeight={'300'}
+                  marginTop={"-20px"}>
                {arr.description}
                 </Text>
                 
@@ -131,14 +127,18 @@ const arr={
               </Box>
             </Stack>
   
-           <Link to={"/cart"}>
-           <Button
+         
+           <Button onClick={()=>{
+props.setAddtocart([...props.addcart,props.size])
+Navigate("/cart")
+
+           }}
               rounded={'none'}
               w={'full'}
               mt={8}
               size={'lg'}
               py={'7'}
-              bg={useColorModeValue('gray.900', 'gray.50')}
+              bg={useColorModeValue('#24a3b5')}
               color={useColorModeValue('white', 'gray.900')}
               textTransform={'uppercase'}
               _hover={{
@@ -146,7 +146,7 @@ const arr={
                 boxShadow: 'lg',
               }}>
               Add to cart
-            </Button></Link>
+            </Button>
   
             <Stack direction="row" alignItems="center" justifyContent={'center'}>
               <MdLocalShipping />

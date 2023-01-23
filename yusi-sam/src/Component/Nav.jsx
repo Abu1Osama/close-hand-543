@@ -8,7 +8,7 @@ import "react-dropdown/style.css";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
-export const Nav = () => {
+export const Nav = (props) => {
   const [poptemp, setPoptemp] = useState({
     men: "none",
     women: "none",
@@ -324,8 +324,8 @@ export const Nav = () => {
               <h3>Men's Clothing</h3>
             
             <li>T-shirt</li>
-            <li>Shirt</li>
-            <li>Jeans</li>
+            <li onClick={props.shirt}>Shirt</li>
+            <li  onClick={props.jeans}>Jeans</li>
             <li>Cargos</li>
             <li>Trousers</li>
             <li>Track Pants</li>
@@ -404,7 +404,7 @@ export const Nav = () => {
               <h3>Ethnic Wear</h3>
             <Link to={"/product"}>
               {" "}
-              <li>Sarees</li>
+              <li onClick={props.sarees}>Sarees</li>
             </Link>
             <li>Kurtas & Kurtis</li>
             <li>Lehengas & Party Gowns</li>
@@ -421,7 +421,7 @@ export const Nav = () => {
           </ul>
           <ul>
               <h3>Lingerie</h3>
-            <li>Bra</li>
+            <li onClick={props.call}>Bra</li>
             <li>Panties</li>
             <li>Sleepwear</li>
             <li>Shapewear</li>
